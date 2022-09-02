@@ -1,4 +1,4 @@
-package com.trxjster.itemservice.ap1.v1;
+package com.trxjster.itemservice.api.v1;
 
 import com.trxjster.itemservice.model.Item;
 import com.trxjster.itemservice.service.ItemService;

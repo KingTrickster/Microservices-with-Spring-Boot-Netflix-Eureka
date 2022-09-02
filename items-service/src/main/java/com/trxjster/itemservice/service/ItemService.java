@@ -1,7 +1,6 @@
 package com.trxjster.itemservice.service;
 
 import com.trxjster.itemservice.model.Item;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
