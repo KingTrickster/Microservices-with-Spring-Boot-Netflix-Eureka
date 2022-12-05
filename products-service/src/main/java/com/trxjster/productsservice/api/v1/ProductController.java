@@ -10,18 +10,25 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController @RequestMapping("/Products")
+@RestController
+@RequestMapping("/Products")
 public class ProductController {
-    @Autowired
-    private ProductService productService;
+	@Autowired
+	private ProductService productService;
 
-    @GetMapping("")
-    public List<Product> getAllProducts(){
-        return productService.findAllProducts();
-    }
+	@GetMapping("")
+	public List<Product> getAllProducts() {
+		return productService.findAllProducts();
+	}
 
-    @GetMapping("/{productId}")
-    public Product getProductById(@PathVariable Long productId){
-        return productService.getProductById(productId);
-    }
+	@GetMapping("/{productId}")
+	public Product getProductById(@PathVariable Long productId) {
+//		try {
+//			Thread.sleep(2000L);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		return productService.getProductById(productId);
+	}
 }
